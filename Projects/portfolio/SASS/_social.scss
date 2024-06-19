@@ -1,0 +1,18 @@
+        .social {
+            width: 60vw;
+            height: 10vh;
+            background-color: $bgc;
+            margin: 0 auto;
+
+            .iconeSocial {
+                display: flex;
+                justify-content: space-around;
+
+                img {
+                    width: 5vw;
+                    float: left;
+                    align-self: center;
+                }
+            }
+
+        }

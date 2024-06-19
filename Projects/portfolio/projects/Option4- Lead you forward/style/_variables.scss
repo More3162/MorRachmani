@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Assistant;
+    src: url(../../../font/Assistant/Assistant-VariableFont_wght.ttf);
+}
+
+$yellowColor: #D3E10E;
+$pColor: #F9F9F9;
+$labelColor: #011560;
+$inputColor: #F6F6F6;
+$font: 'Assistant';
+$fz: 2em;
+
+
+@mixin fDirection ($flexdirection) {
+    display: flex;
+    flex-direction: $flexdirection;
+    justify-content: center;
+    align-items: center;
+}

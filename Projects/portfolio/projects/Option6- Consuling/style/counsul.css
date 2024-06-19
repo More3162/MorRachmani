@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Heebo';
+    src: url(../../../font/Assistant/Assistant-VariableFont_wght.ttf);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+}
+
+.img-container {
+    width: 25vw;
+}
+
+.img-container img {
+    width: 25vw;
+    height: auto;
+    margin-left: 50px;
+}
+
+.flexor {
+    display: flex;
+}
+
+.form-container {
+    width: 54vw;
+    margin-left: 60px;
+}
+
+.flex-container .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+
+.flex-container .form-container label {
+    color: #2C2C2C;
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: 'Heebo';
+}
+
+.flex-container .form-container input {
+    width: 200px;
+    height: 26px;
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 2px solid #FDBD03;
+}
+
+.form-move {
+    margin-left: 20px;
+}
+
+.form-container h1 {
+    font-family: 'Heebo';
+    color: #FDBD03;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.form-container h5 {
+    font-family: 'Heebo';
+    color: #020253;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.form-container textarea {
+    height: 90px;
+    width: 420px;
+    background-color: #E5EEFF;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid #FDBD03;
+    margin-bottom: 30px;
+}
+
+#textareaLabel {
+    color: #2C2C2C;
+    font-size: 0.7rem;
+}
+
+form a {
+    text-decoration: none;
+    color: #000;
+    padding: 7px 35px;
+    background-color: #FDBD03;
+    font-weight: bold;
+    font-family: 'Heebo';
+}
+
+.topYellow {
+    width: 250px;
+    height: 7px;
+    background-color: #FDBD03;
+}
+
+.Icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.Icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    transform: translateX(1120px);
+}
+
+.Icon-footer {
+    width: 20px;
+    height: 20px;
+}
+
+.small-icon {
+    width: 17px;
+    height: 17px;
+}
+
+.footer-icon {
+    transform: translate(925px, 80px);
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+}
+
+.personalCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #FDBD03;
+    border-radius: 50%;
+}
+
+.bottomYellow {
+    height: 7px;
+    background-color: #FDBD03;
+    width: 660px;
+    float: right;
+    margin-top: 100px;
+}
+
+@media screen and (max-width:400px) {
+    .flex-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .img-container img {
+        width: 80px;
+        height: auto;
+        margin-top: -20px;
+        max-width: 80px;
+    }
+
+    .img-container {
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .form-container {
+        width: 370px;
+        margin-left: -100px;
+    }
+
+    .flexor {
+        flex-direction: column;
+    }
+
+    .form-move {
+        margin-left: 0px;
+    }
+
+    .flex-container .form-container input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .form-container textarea {
+        width: 100%;
+    }
+
+    .form-container h5 {
+        text-align: center;
+    }
+
+    form a {
+        display: block;
+        text-align: center;
+        margin-top: -20px
+    }
+
+    .footer-icon {
+        transform: translate(25px, 80px);
+    }
+
+    .bottomYellow {
+        width: 350px;
+        float: left;
+    }
+}

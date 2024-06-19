@@ -1,0 +1,65 @@
+@mixin inputShortcut {
+    width: 250px;
+    margin-left: 20px;
+    border: none;
+    border-bottom: 2px solid $yellowColor;
+    height: 25px;
+    background-color: $inputColor;
+}
+
+.formContainer {
+    height: 60vh;
+    @include fDirection(row);
+
+    .inputCont {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            @include inputShortcut;
+        }
+
+        label {
+            margin-left: 20px;
+            color: $labelColor;
+            font: normal normal bold 10px/21px $font;
+            font-size: 21px;
+        }
+    }
+
+    a {
+        margin-left: 20px;
+        padding: 13px 40px;
+        color: $labelColor;
+        text-decoration: none;
+        background-color: $yellowColor;
+        font: normal normal bold 14px $font;
+        font-size: 18px;
+    }
+
+
+}
+
+@media screen and (max-width:375px) {
+    .formContainer {
+        margin-top: -50px;
+        width: 100vw;
+        @include fDirection(column);
+
+        .inputCont {
+            margin-left: -20px;
+            margin-bottom: 10px;
+
+            input {
+                background-color: #E5EEFF;
+            }
+        }
+
+        a {
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 250px;
+            text-align: center;
+        }
+    }
+}

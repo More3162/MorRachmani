@@ -1,0 +1,50 @@
+.backImg {
+    background-image: url('../photos/bluebackground.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.contentContainer {
+    @include fDirection(column);
+    height: 70vh;
+    width: 100vw;
+
+    h1 {
+        color: $yellowColor;
+        font-family: $font;
+        font-size: 90px;
+    }
+
+    p {
+        color: $pColor;
+        font-size: $fz;
+        font: normal normal normal 16px/26px $font;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .backImg {
+        background-image: url('../photos/responsiveBackClean.png');
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .contentContainer {
+        width: 100vw;
+        height: 40vh;
+
+        h1 {
+            font-size: 25px;
+            margin-top: -60px;
+        }
+
+        p {
+            font-size: 10px;
+            margin-top: -20px;
+        }
+    }
+}

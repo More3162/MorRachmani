@@ -1,0 +1,38 @@
+.content {
+    width: 100%;
+    background-color: $bgc;
+    padding: 100px;
+
+    .opening {
+        text-align: center;
+
+        h1 {
+            padding-top: 70px;
+            font-size: 3rem;
+            color: $color1;
+            letter-spacing: 2px;
+        }
+
+        .icon {
+
+            img {
+                width: 50px;
+                height: 50px;
+                flex-direction: column;
+            }
+        }
+
+    }
+
+    @media (max-width: 576px) {
+        .opening {
+            width: 100%;
+            height: 10%;
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+}

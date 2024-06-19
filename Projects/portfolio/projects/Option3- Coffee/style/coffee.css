@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Heebo";
+    src: url(../../../font/Heebo/Heebo-VariableFont_wght.ttf);
+}
+
+.container {
+    display: flex;
+}
+
+.imgcontainer img {
+    width: 55vw;
+    height: auto;
+}
+
+.contentcontainer {
+    width: 45vw;
+    height: 675px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentwrapper {
+    width: 350px;
+    height: 400px;
+}
+
+.contentwrapper h3 {
+    font-size: 45px;
+    font-family: 'Heebo';
+    color: #020253;
+}
+
+.contentwrapper p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Heebo';
+    color: #020253;
+    width: 300px;
+}
+
+.formwrapper {
+    margin-top: 40px;
+}
+
+.formwrapper label,
+.formwrapper input {
+    display: block;
+}
+
+.formwrapper label {
+    font-size: 18px;
+    font-family: 'Heebo';
+    color: #2C2C2C;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.formwrapper input {
+    width: 28vw;
+    height: 27px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 2px solid #020253;
+}
+
+.contentwrapper a {
+    display: block;
+    color: #fff;
+    padding: 7px 20px;
+    text-align: center;
+    background-color: #020253;
+    width: 100px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 25px;
+    font-family: 'Heebo';
+}
+
+@media screen and (max-width:800px) {
+    .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgcontainer img {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .contentcontainer {
+        height: 450px;
+        width: 75vw;
+    }
+
+    .contentwrapper h3 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .contentwrapper p {
+        margin-top: 0px;
+    }
+
+    .formwrapper input {
+        width: 100%;
+    }
+
+    .contentwrapper a {
+        width: 100%;
+    }
+}

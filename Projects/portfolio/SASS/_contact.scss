@@ -1,0 +1,68 @@
+.contact {
+    width: 60vw;
+    margin: 0 auto;
+    background-color: $bgc;
+
+    h2 {
+        font-family: $fontf;
+        font-size: 3rem;
+        color: $color1;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .mass {
+        label {
+            font-family: $fontf;
+            color: $color4;
+            font-size: $fz;
+            align-items: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            color: $color3;
+            font-family: $fontf;
+            font-size: 2rem;
+            border: none;
+            cursor: pointer;
+            margin: 0 auto;
+            text-align: center;
+            border: 2px solid $colorterd;
+            background: $bgc;
+        }
+    }
+
+    @mixin mobile {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+
+    @mixin tablet {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @mixin laptop {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
+}
