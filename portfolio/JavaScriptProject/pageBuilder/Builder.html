@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="builder.css">
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <script defer src="builder.js"></script>
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="pageSide" id="pageSide">
+
+        </div>
+        <div class="builderSide">
+            <h1>Website Builder</h1>
+            <form>
+                <div class="alignItems">
+                    <label class="builderLabel">Element:</label>
+                    <input id="elementInput" type="text" class="builderInput">
+                </div>
+                <div class="alignItems">
+                    <label class="builderLabel">Background Color:</label>
+                    <input id="bgcolorInput" type="text" class="builderInput">
+                </div>
+                <div class="alignItems">
+                    <label class="builderLabel">Width:</label>
+                    <input id="widthInput" type="number" class="builderInput">
+                </div>
+                <div class="alignItems">
+                    <label class="builderLabel">Height:</label>
+                    <input id="heightInput" type="number" class="builderInput">
+                </div>
+            </form>
+            <div class="buttonWrap">
+                <button id="btn">Create</button>
+                <button class="btnDel" id="btn">Delete</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

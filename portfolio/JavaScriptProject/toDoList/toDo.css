@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'rouge';
+    src: url(/font/rougue/RougeScript-Regular.ttf);
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.app {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.wrapper {
+    background-color: #a4a3a1;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding: 50px 50px 50px 50px;
+    border-radius: 10px;
+}
+
+.align {
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.align input {
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'rouge';
+    font-size: 2rem;
+}
+
+.deleteImg {
+    width: 30px;
+    height: 25px;
+    border-radius: 50%;
+    float: right;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.deleteImg:hover {
+    box-shadow: 2px 2px 7px #333;
+}
+
+#list {
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 2;
+    margin-left: 20px;
+}
+
+#list li {
+    margin-top: 20px;
+    vertical-align: middle;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+    background-color: #59adf6;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border-bottom: 1px solid black;
+}
+
+#list li::before {
+    content: '';
+    background-color: #59adf6;
+    width: 30px;
+    position: absolute;
+    padding: 1px 1px 1px 1px;
+    border-radius: 50%;
+    margin-left: -40px;
+    margin-top: 3px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/uncheck.png);
+}
+
+#list li.checked {
+    background-color: #9c9d97;
+    text-decoration: line-through;
+}
+
+#list li.checked::before {
+    background-color: black;
+    background-image: url(./images/check.png);
+}
+
+@media screen and (max-width:700px) {
+    .app {
+        width: 90%;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .align {
+        width: 90%;
+    }
+
+    .app #list li {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+    .app ul li span {
+        vertical-align: middle;
+    }
+
+    .app li .deleteImg {
+        width: 25px;
+        height: 20px;
+        margin-top: -1px;
+    }
+
+    #list li::before {
+        margin-top: -2px;
+    }
+}

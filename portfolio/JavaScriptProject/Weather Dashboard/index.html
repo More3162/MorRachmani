@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span>Dark Mode</span>
+            </div>
+            <input type="text" id="citySearch" placeholder="Search for your preferred city...">
+            <button onclick="getWeatherByCity()">Current Location</button>
+        </div>
+        <div class="main">
+            <div class="left-panel">
+                <div id="city" class="info-box"></div>
+                <div id="time" class="info-box"></div>
+                <div id="forecast" class="info-box"></div>
+            </div>
+            <div class="right-panel">
+                <div id="currentWeather" class="info-box"></div>
+                <div id="hourlyForecast" class="info-box"></div>
+            </div>
+        </div>
+        <div id="map" class="map"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
