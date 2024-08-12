@@ -11,7 +11,7 @@ function addTask() {
     } else {
         let li = document.createElement('li');
         let delImg = document.createElement('img');
-        delImg.src = "../images/delete.png";
+        delImg.src = ".//images/deleteImg.png";
         delImg.classList.add('deleteImg');
         let task = document.createElement('span');
         const days = timeDiffer();

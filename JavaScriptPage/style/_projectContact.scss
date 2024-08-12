@@ -1,0 +1,118 @@
+.content {
+    padding-top: 100px;
+    width: 100vw;
+    margin: 0 auto;
+    background-color: $bgc;
+
+    h1 {
+        font-family: $fontf;
+        font-size: 3rem;
+        color: $color1;
+        text-align: center;
+        padding: 30px;
+    }
+
+    p {
+        font-family: $fontf;
+        font-size: 1.5rem;
+        color: $color3;
+        text-align: center;
+        padding: 30px;
+    }
+
+}
+
+.icon {
+    display: flex;
+    justify-content: space-evenly;
+
+    img {
+        margin: 0 auto;
+        align-content: center;
+        width: 50px;
+        height: 50px;
+        flex-direction: column;
+    }
+}
+
+.download {
+    width: 100vw;
+    padding-top: 50px;
+
+    a {
+        font-family: $fontf;
+        font-size: $fz;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        font-family: $fontf;
+        color: $color4;
+        font-size: $fz;
+        padding: 10px;
+        cursor: pointer;
+        border: 2px solid $color2;
+        border-radius: 30px;
+    }
+
+    a:hover {
+        background-color: $color2;
+        color: $colorsec;
+    }
+
+
+    .cardImg1 {
+        width: 650px;
+        margin: 0 auto;
+        display: block;
+    }
+
+}
+
+.social {
+    width: 60vw;
+    height: 10vh;
+    margin: 0 auto;
+
+    .iconeSocial {
+        display: flex;
+        justify-content: space-around;
+
+        img {
+            width: 50px;
+            float: left;
+            align-self: center;
+        }
+    }
+
+}
+
+@mixin mobile {
+    @media (max-width: 576px) {
+        @content;
+
+        .icon {
+            width: 60%;
+
+            img {
+                width: 30px;
+                height: 30px;
+                margin: 0 20px;
+            }
+        }
+
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 992px) {
+        @content;
+
+    }
+}
+
+@mixin laptop {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}

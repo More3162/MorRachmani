@@ -12,7 +12,6 @@ body {
   font-family: Assistant;
   src: url(../../../font/Assistant/Assistant-VariableFont_wght.ttf);
 }
-
 .formContainer {
   height: 60vh;
   display: flex;
@@ -20,12 +19,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .formContainer .inputCont {
   display: flex;
   flex-direction: column;
 }
-
 .formContainer .inputCont input {
   width: 250px;
   margin-left: 20px;
@@ -34,14 +31,12 @@ body {
   height: 25px;
   background-color: #F6F6F6;
 }
-
 .formContainer .inputCont label {
   margin-left: 20px;
   color: #011560;
   font: normal normal bold 10px/21px "Assistant";
   font-size: 21px;
 }
-
 .formContainer a {
   margin-left: 20px;
   padding: 13px 40px;
@@ -61,16 +56,13 @@ body {
     justify-content: center;
     align-items: center;
   }
-
   .formContainer .inputCont {
     margin-left: -20px;
     margin-bottom: 10px;
   }
-
   .formContainer .inputCont input {
     background-color: #E5EEFF;
   }
-
   .formContainer a {
     margin: 0 auto;
     margin-top: 10px;
@@ -78,7 +70,6 @@ body {
     text-align: center;
   }
 }
-
 .backImg {
   background-image: url("../photos/bluebackground.png");
   background-repeat: no-repeat;
@@ -97,13 +88,11 @@ body {
   height: 70vh;
   width: 100vw;
 }
-
 .contentContainer h1 {
   color: #D3E10E;
   font-family: "Assistant";
   font-size: 90px;
 }
-
 .contentContainer p {
   color: #F9F9F9;
   font-size: 2em;
@@ -116,21 +105,16 @@ body {
     width: 100vw;
     height: 40vh;
   }
-
   .contentContainer {
     width: 100vw;
     height: 40vh;
   }
-
   .contentContainer h1 {
     font-size: 25px;
     margin-top: -60px;
   }
-
   .contentContainer p {
     font-size: 10px;
     margin-top: -20px;
   }
-}
-
-/*# sourceMappingURL=bluelead.css.map */
+}/*# sourceMappingURL=bluelead.css.map */

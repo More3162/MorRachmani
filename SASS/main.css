@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -19,31 +18,26 @@ header {
   position: fixed;
   display: flex;
 }
-
 header h1 {
   color: #2F4F4F;
   font-family: Montserrat;
   font-size: 3rem;
 }
-
 header img {
   width: 70px;
   height: 70px;
   margin: 0 40px;
   border-radius: 50px;
 }
-
 header nav ul,
 header .hamburger ul {
   display: flex;
   list-style: none;
 }
-
 header nav ul li,
 header .hamburger ul li {
   margin-left: 20px;
 }
-
 header nav ul li a,
 header .hamburger ul li a {
   text-decoration: none;
@@ -51,45 +45,37 @@ header .hamburger ul li a {
   font-family: Montserrat;
   font-size: 1rem;
 }
-
 header nav ul li a:hover,
 header .hamburger ul li a:hover {
   color: #00FFFF;
 }
-
 header .hamburger {
   font-size: 1.4em;
   color: white;
   padding-left: 5px 8px;
   display: none;
 }
-
 @media (max-width: 576px) {
   header heder {
     flex-direction: column;
     width: 100vw;
   }
-
   header img {
     display: none;
   }
-
   header h1 {
     color: #2F4F4F;
     font-family: Montserrat;
     font-size: 2rem;
     display: block;
   }
-
   header nav ul {
     display: none;
   }
-
   header .hamburger {
     display: block;
   }
-
-  header nav .hamburger:hover+ul {
+  header nav .hamburger:hover + ul {
     display: block;
     flex-direction: column;
     grid-template-columns: 4;
@@ -100,14 +86,12 @@ header .hamburger {
   padding-top: 100px;
   background-color: black;
 }
-
 .about img {
   width: 200px;
   margin: 0 auto;
   display: block;
   border-radius: 15px;
 }
-
 .about p {
   text-align: center;
   font-size: 1rem;
@@ -115,7 +99,6 @@ header .hamburger {
   letter-spacing: 2px;
   margin: 0 auto;
 }
-
 .about a {
   width: 200px;
   display: block;
@@ -126,7 +109,6 @@ header .hamburger {
   text-transform: uppercase;
   border: 2px solid #FFFFFF;
 }
-
 .about a:hover {
   color: #2F4F4F;
   border: 3px solid #2F4F4F;
@@ -136,46 +118,38 @@ header .hamburger {
   .about img {
     width: 100px;
   }
-
   .about p {
     font-size: 1.5rem;
   }
-
   .about a {
     width: 20vw;
     font-size: 1.5rem;
   }
 }
-
 .content {
   width: 100%;
   background-color: black;
   padding: 100px;
 }
-
 .content .opening {
   text-align: center;
 }
-
 .content .opening h1 {
   padding-top: 70px;
   font-size: 3rem;
   color: #00FFFF;
   letter-spacing: 2px;
 }
-
 .content .opening .icon img {
   width: 50px;
   height: 50px;
   flex-direction: column;
 }
-
 @media (max-width: 576px) {
   .content .opening {
     width: 100%;
     height: 10%;
   }
-
   .content .opening h1 {
     font-size: 2rem;
   }
@@ -184,7 +158,6 @@ header .hamburger {
 .gallrey {
   background-color: black;
 }
-
 .gallrey .container h1 {
   font-family: Montserrat;
   font-size: 3rem;
@@ -192,7 +165,6 @@ header .hamburger {
   text-align: center;
   padding: 30px;
 }
-
 .gallrey .projct1,
 .gallrey .projct2,
 .gallrey .projct3,
@@ -206,7 +178,16 @@ header .hamburger {
   border-radius: 10px;
   background-color: black;
 }
-
+.gallrey .projct1 .card-body,
+.gallrey .projct2 .card-body,
+.gallrey .projct3 .card-body,
+.gallrey .projct4 .card-body,
+.gallrey .projct5 .card-body,
+.gallrey .projct6 .card-body {
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+}
 .gallrey .projct1 .card-img,
 .gallrey .projct2 .card-img,
 .gallrey .projct3 .card-img,
@@ -214,9 +195,11 @@ header .hamburger {
 .gallrey .projct5 .card-img,
 .gallrey .projct6 .card-img {
   width: 100%;
-  height: 40%;
+  height: 20vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin: 0 auto;
 }
-
 .gallrey .projct1 h5,
 .gallrey .projct2 h5,
 .gallrey .projct3 h5,
@@ -229,7 +212,6 @@ header .hamburger {
   text-align: center;
   padding: 10px;
 }
-
 .gallrey .projct1 p,
 .gallrey .projct2 p,
 .gallrey .projct3 p,
@@ -243,17 +225,26 @@ header .hamburger {
   text-align: center;
   padding: 10px;
 }
-
+.gallrey .projct1 .iconBar,
+.gallrey .projct2 .iconBar,
+.gallrey .projct3 .iconBar,
+.gallrey .projct4 .iconBar,
+.gallrey .projct5 .iconBar,
+.gallrey .projct6 .iconBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
 .gallrey .projct1 img,
 .gallrey .projct2 img,
 .gallrey .projct3 img,
 .gallrey .projct4 img,
 .gallrey .projct5 img,
 .gallrey .projct6 img {
-  width: 3.5vw;
-  justify-content: space-evenly;
+  width: 2vw;
+  height: 2vw;
 }
-
 .gallrey .projct1 .card-body,
 .gallrey .projct2 .card-body,
 .gallrey .projct3 .card-body,
@@ -263,7 +254,6 @@ header .hamburger {
   width: 100%;
   height: 60%;
 }
-
 .gallrey .projct1 .card-body a,
 .gallrey .projct2 .card-body a,
 .gallrey .projct3 .card-body a,
@@ -281,7 +271,6 @@ header .hamburger {
   border-radius: 5px;
   border: 2px solid #BF00FF;
 }
-
 .gallrey .projct1 .card-body img,
 .gallrey .projct2 .card-body img,
 .gallrey .projct3 .card-body img,
@@ -290,7 +279,6 @@ header .hamburger {
 .gallrey .projct6 .card-body img {
   margin-left: 3px;
 }
-
 .gallrey .projct1 .card-body:hover,
 .gallrey .projct2 .card-body:hover,
 .gallrey .projct3 .card-body:hover,
@@ -300,11 +288,36 @@ header .hamburger {
   background: #FFFFFF;
   transition: all 2s ease-in-out;
 }
-
 .gallrey .card-body:hover a {
   color: black;
   background-color: #4895ef;
   transition: all 2s ease-in-out;
+}
+@media (max-width: 1200px) {
+  .gallrey .projct1,
+  .gallrey .projct2,
+  .gallrey .projct3,
+  .gallrey .projct4,
+  .gallrey .projct5,
+  .gallrey .projct6 {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .gallrey .projct1,
+  .gallrey .projct2,
+  .gallrey .projct3,
+  .gallrey .projct4,
+  .gallrey .projct5,
+  .gallrey .projct6 {
+    width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  .gallrey .container h1 {
+    font-size: 2rem;
+    padding: 20px;
+  }
 }
 
 .contact {
@@ -312,7 +325,6 @@ header .hamburger {
   margin: 0 auto;
   background-color: black;
 }
-
 .contact h2 {
   font-family: Montserrat;
   font-size: 3rem;
@@ -320,26 +332,22 @@ header .hamburger {
   text-align: center;
   padding: 30px;
 }
-
 .contact .mass label {
   font-family: Montserrat;
   color: #BF00FF;
   font-size: 1rem;
   align-items: center;
 }
-
 .contact .mass input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
 }
-
 .contact .mass textarea {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
 }
-
 .contact .mass button {
   width: 100%;
   padding: 10px;
@@ -361,12 +369,10 @@ header .hamburger {
   background-color: black;
   margin: 0 auto;
 }
-
 .social .iconeSocial {
   display: flex;
   justify-content: space-around;
 }
-
 .social .iconeSocial img {
   width: 5vw;
   float: left;
@@ -381,6 +387,4 @@ header .hamburger {
   color: #FF007F;
   font-family: Montserrat;
   font-size: 1rem;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

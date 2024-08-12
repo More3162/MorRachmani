@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    behavior: smooth;
+}
+
+$width: 100vw;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$bgc: black;
+$color1: #00FFFF;
+$color2: #FF007F;
+$color3: #2F4F4F;
+$color4: #BF00FF;
+$color5: #3f37c9;
+$color5: #4895ef;
+$colorsec: #FFFFFF;
+$colorterd: #FFFFFF;
+$fontf: Montserrat;
+$fz: 1rem;

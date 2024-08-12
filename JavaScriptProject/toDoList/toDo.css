@@ -9,28 +9,33 @@
     src: url(/font/rougue/RougeScript-Regular.ttf);
 }
 
+body {
+    background-color: #ffeb99;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
 .container {
     width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .app {
     width: 600px;
-    height: auto;
     margin: 0 auto;
 }
 
 .wrapper {
-    background-color: #a4a3a1;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding: 50px 50px 50px 50px;
-    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .align {
-    width: 200px;
+    width: 250px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -38,74 +43,82 @@
 }
 
 .align input {
-    margin-top: 10px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #59adf6;
+    border-radius: 10px;
+    background-color: #e3f2fd;
 }
 
 h2 {
     text-align: center;
     font-family: 'rouge';
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #ff7043;
+    margin-bottom: 20px;
 }
 
 .deleteImg {
     width: 30px;
-    height: 25px;
+    height: 30px;
     border-radius: 50%;
     float: right;
     margin-top: 5px;
     margin-left: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
 }
 
 .deleteImg:hover {
-    box-shadow: 2px 2px 7px #333;
+    box-shadow: 2px 2px 7px #ff7043;
 }
 
 #list {
-    text-decoration: none;
     list-style-type: none;
     line-height: 2;
     margin-left: 20px;
+    padding: 0;
 }
 
 #list li {
     margin-top: 20px;
-    vertical-align: middle;
-    font-size: 17px;
+    padding: 10px;
+    font-size: 18px;
     user-select: none;
     cursor: pointer;
     background-color: #59adf6;
-    padding-right: 5px;
-    padding-left: 5px;
     border-radius: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #004d40;
+    position: relative;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
 }
 
 #list li::before {
     content: '';
-    background-color: #59adf6;
+    background-color: #ffcc80;
     width: 30px;
-    position: absolute;
-    padding: 1px 1px 1px 1px;
-    border-radius: 50%;
-    margin-left: -40px;
-    margin-top: 3px;
     height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
     background-size: cover;
     background-position: center;
     background-image: url(./images/uncheck.png);
 }
 
 #list li.checked {
-    background-color: #9c9d97;
+    background-color: #9e9e9e;
     text-decoration: line-through;
 }
 
 #list li.checked::before {
-    background-color: black;
+    background-color: #81c784;
     background-image: url(./images/check.png);
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
     .app {
         width: 90%;
     }
@@ -113,29 +126,26 @@ h2 {
     .wrapper {
         width: 90%;
         margin: 0 auto;
+        padding: 30px;
     }
 
     .align {
         width: 90%;
     }
 
-    .app #list li {
+    #list li {
         width: 100%;
-        font-size: 12px;
-        margin-top: 30px;
+        font-size: 14px;
     }
 
-    .app ul li span {
-        vertical-align: middle;
-    }
-
-    .app li .deleteImg {
+    .deleteImg {
         width: 25px;
-        height: 20px;
-        margin-top: -1px;
+        height: 25px;
     }
 
     #list li::before {
-        margin-top: -2px;
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
     }
 }
