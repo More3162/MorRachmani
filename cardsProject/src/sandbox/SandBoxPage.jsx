@@ -10,14 +10,17 @@ import GrandParent from './context/GrandParent'
 import Counter from './stastes/Counter'
 import Timer from './effects/Timer'
 import FormExample from './forms/FormExample'
+import FormExampleNew from './forms/FormExampleNew'
+import FormFin from './forms/FormFin'
+import LoginPage from '../users/pages/LoginPage'
+
 
 
 export default function SandBoxPage() {
     return (
         <div>
             <PageHeader title="SandBox" subtitle="This is the sandbox page" />
-            <FormExample />
-
+            <LoginPage />
         </div>
     )
 }

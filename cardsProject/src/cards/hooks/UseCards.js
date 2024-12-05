@@ -1,6 +1,10 @@
 import { useCallback, useState } from 'react';
 import axios from 'axios';
 import { useSnack } from '../../providers/SnackBarProvider';
+import { useNavigate } from "react-router-dom";
+import useAxios from '../../hooks/useAxios';
+
+
 
 export default function UseCards() {
 
@@ -12,7 +16,12 @@ export default function UseCards() {
 
     const [error, setError] = useState();
 
+    const navigate = useNavigate();
+
     const setSnack = useSnack();
+
+    useAxios(); // קריאה לפונקציה שמגדירה את הטוקן בהדרס של אקסיוס
+
 
     const getCardById = useCallback(async (id) => {
         try {
@@ -50,6 +59,32 @@ export default function UseCards() {
         console.log("Card " + id + " has been liked");
     }, []);
 
+
+    /* פונקציה הוספת כרטיס חדש ברגע שאתה מחובר */
+    const handleCreateCard = useCallback(
+        async (cardFromClient) => {
+            setError(null);
+            setIsLoading(true);
+            try {
+                const { data } = await axios.post(
+                    `https://monkfish-app-z9uza.ondigitalocean.app/bcard2/cards`,
+                    cardFromClient,
+                    { "x-auth-token": localStorage.getItem("my token") }
+                );
+                const card = data;
+                setCard(card);
+                setSnack("success", "A new business card has been created");
+                setTimeout(() => {
+                    navigate(ROUTES.ROOT);
+                }, 1000);
+            } catch (error) {
+                setError(error.message);
+            }
+            setIsLoading(false);
+        },
+        [setSnack, navigate]
+    );
+
     return {
         cards,
         card,
@@ -59,6 +94,7 @@ export default function UseCards() {
         getAllCards,
         handleDelete,
         handleLike,
+        handleCreateCard,
     };
 
 }

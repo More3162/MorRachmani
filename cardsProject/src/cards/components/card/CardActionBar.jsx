@@ -4,12 +4,12 @@ import ModeEditIcon from "@mui/icons-material/ModeEdit";
 import CallIcon from "@mui/icons-material/Call";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { Box, IconButton, CardActions } from "@mui/material";
-import { useUser } from "../../../users/providers/UserProvider";
+import { useCurrentUser } from "../../../users/providers/UserProvider";
 
 
 export default function CardActionBar({ cardId, handleEdit, handleDelete, handelCall, handleLike }) {
 
-    const user = useUser();
+    const user = useCurrentUser();
     /*     console.log(user.firstName); */
 
 

@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <CustomThemeProvider> {/* נותן אפשרות להחליף ערכת נושא */}
           <SnackbarProvider> {/* נותן אפשרות להציג הודעות */}
-            <UserProvider> {/* נותן גישה למידע בכל הפרוייקט */}
+            <UserProvider> {/*  נותן גישה למידע בכל הפרוייקט - לפי האם מחובר משתמש או לא */}
               <Layout> {/* נותן את העיצוב לכל האתר */}
                 <Router />
               </Layout>
